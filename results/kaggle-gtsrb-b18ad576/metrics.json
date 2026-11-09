@@ -1,0 +1,158 @@
+{
+  "seed": 42,
+  "device": "Tesla T4",
+  "versions": {
+    "torch": "2.11.0+cu130"
+  },
+  "image_size": 96,
+  "batch_size": 64,
+  "split": {
+    "train": 21300,
+    "validation": 5340,
+    "test": 12630
+  },
+  "models": {
+    "cnn": {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.9739216089696392,
+          "accuracy": 0.48146067415730337,
+          "macro_f1": 0.3273747067807607,
+          "train_and_validation_seconds": 30.96
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.761905637358276,
+          "accuracy": 0.5732209737827715,
+          "macro_f1": 0.4351895388806384,
+          "train_and_validation_seconds": 23.34
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.36223981562914426,
+          "accuracy": 0.6194756554307116,
+          "macro_f1": 0.4632251770901989,
+          "train_and_validation_seconds": 23.21
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.22132193078457468,
+          "accuracy": 0.6382022471910113,
+          "macro_f1": 0.49863500994477306,
+          "train_and_validation_seconds": 23.08
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.14913701177482874,
+          "accuracy": 0.6565543071161049,
+          "macro_f1": 0.5128193150634915,
+          "train_and_validation_seconds": 23.29
+        }
+      ],
+      "best_validation_macro_f1": 0.5128193150634915,
+      "test": {
+        "accuracy": 0.6850356294536817,
+        "macro_f1": 0.571285031791183
+      },
+      "top_confusions": [
+        {
+          "true_id": 5,
+          "predicted_id": 8,
+          "count": 149
+        },
+        {
+          "true_id": 7,
+          "predicted_id": 8,
+          "count": 108
+        },
+        {
+          "true_id": 2,
+          "predicted_id": 7,
+          "count": 106
+        },
+        {
+          "true_id": 8,
+          "predicted_id": 7,
+          "count": 105
+        },
+        {
+          "true_id": 5,
+          "predicted_id": 7,
+          "count": 101
+        }
+      ]
+    },
+    "resnet18": {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.4117103110687554,
+          "accuracy": 0.9207865168539325,
+          "macro_f1": 0.8098757106237787,
+          "train_and_validation_seconds": 30.4
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.01255980835064476,
+          "accuracy": 0.9294007490636704,
+          "macro_f1": 0.8205229415704569,
+          "train_and_validation_seconds": 30.12
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.005785834893732913,
+          "accuracy": 0.9441947565543071,
+          "macro_f1": 0.8362891160301661,
+          "train_and_validation_seconds": 30.39
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.006273613146772967,
+          "accuracy": 0.9391385767790262,
+          "macro_f1": 0.8293550290107604,
+          "train_and_validation_seconds": 30.25
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.007032670842859667,
+          "accuracy": 0.9556179775280899,
+          "macro_f1": 0.8487131476750551,
+          "train_and_validation_seconds": 30.2
+        }
+      ],
+      "best_validation_macro_f1": 0.8487131476750551,
+      "test": {
+        "accuracy": 0.963341250989707,
+        "macro_f1": 0.9369501414130004
+      },
+      "top_confusions": [
+        {
+          "true_id": 3,
+          "predicted_id": 5,
+          "count": 40
+        },
+        {
+          "true_id": 30,
+          "predicted_id": 11,
+          "count": 34
+        },
+        {
+          "true_id": 18,
+          "predicted_id": 26,
+          "count": 25
+        },
+        {
+          "true_id": 22,
+          "predicted_id": 25,
+          "count": 23
+        },
+        {
+          "true_id": 5,
+          "predicted_id": 2,
+          "count": 17
+        }
+      ]
+    }
+  }
+}
